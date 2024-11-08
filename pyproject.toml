@@ -27,7 +27,7 @@ typing-extensions = "^4.12.2"
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
 pytest-cov = "^2.11"
-black = "^20.8b1"
+black = "^24.3"
 flake8 = "^3.8"
 
 [build-system]
