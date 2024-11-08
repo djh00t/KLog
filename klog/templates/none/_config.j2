@@ -1,0 +1,42 @@
+{# Template-specific configuration #}
+{% set config = {
+    'total_width': 80,
+    'fields': {
+        'message': {
+            'min_width': 20,
+            'max_width': 80
+        },
+        'padding': {
+            'min_width': 0,
+            'padding_char': ' ',
+            'leading_char': ' ',
+            'closing_char': ' '
+        },
+        'reason': {
+            'max_width': 22,
+            'leading_char': '(',
+            'closing_char': ')'
+        },
+        'status': {
+            'leading_char': ' ',
+            'max_width': 10
+        }
+    },
+    'defaults': {
+        'DEBUG': {
+            'status': ''
+        },
+        'INFO': {
+            'status': ''
+        },
+        'WARNING': {
+            'status': ''
+        },
+        'ERROR': {
+            'status': ''
+        },
+        'CRITICAL': {
+            'status': ''
+        }
+    }
+} %}
