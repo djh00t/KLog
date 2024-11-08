@@ -1,0 +1,10 @@
+{# error_template.j2 #}
+{%- extends "base_template.j2" -%}
+{%- block field_styles -%}
+{% set field_styles = {
+    'status': {
+        'color': 'red',
+        'style': 'bold'
+    }
+} %}
+{%- endblock -%}
