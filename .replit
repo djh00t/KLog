@@ -1,0 +1,10 @@
+modules = ["python-3.11", "bash"]
+compile = "make"
+run = "poetry run python examples/example.py"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+build = ["sh", "-c", "make"]
+run = ["sh", "-c", "poetry run python examples/example.py"]
